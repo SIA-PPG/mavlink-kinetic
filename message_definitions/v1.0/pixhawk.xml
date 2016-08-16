@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+	<mavlink>
+	<include>common.xml</include>
+	<messages>
+     <message id="182" name="MOTORSPEED">
+               <description>The airspeed measured by sensors and IMU</description>
+               <field type="int64_t" name="index">Timestamp (milliseconds since system boot)</field>
+               <field type="int64_t" name="motorspeed0">Airspeed estimate from IMU, cm/s</field>
+               <field type="int64_t" name="motorspeed1">Pitot measured forward airpseed, cm/s</field>
+			   <field type="int64_t" name="motorspeed2">Timestamp (milliseconds since system boot)</field>
+               <field type="int64_t" name="motorspeed3">Airspeed estimate from IMU, cm/s</field>
+               <field type="int64_t" name="motorspeed4">Pitot measured forward airpseed, cm/s</field>
+			   <field type="int64_t" name="motorspeed5">Timestamp (milliseconds since system boot)</field>
+               <field type="int64_t" name="motorspeed6">Airspeed estimate from IMU, cm/s</field>
+               <field type="int64_t" name="motorspeed7">Pitot measured forward airpseed, cm/s</field>
+     </message>
+    
+   </messages>
+</mavlink>
