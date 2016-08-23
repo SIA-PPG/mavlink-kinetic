@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+	<mavlink>
+	<include>common.xml</include>
+	<messages>
+     <message id="182" name="MAVROS_TEST_MSG">
+               <description>This mavlink message is for testing with mavros</description>
+               <field type="uint64_t" name="timestamp">Timestamp (milliseconds since system boot)</field>
+               <field type="float" name="test">data</field>
+     </message>
+    
+   </messages>
+</mavlink>
