@@ -197,9 +197,9 @@
 		<field type="uint8_t" name="num_odd_even">0, 1 or 2 represent spray all number, odd number or even number</field>
 		<field type="uint8_t" name="task_status">task status NO. about Task State Machine, 0~16~30</field>
 		<field type="uint8_t" name="loop_value">loop number of current task, 0~5</field>
-		<field type="float" name="target_x">target X position (NED)</field>
-        <field type="float" name="target_y">target Y position (NED)</field>
-        <field type="float" name="target_z">target Z position (NED)</field>
+		<field type="double" name="target_lat">target latitude, in deg</field>
+        <field type="double" name="target_lon">target longitude, in deg</field>
+        <field type="float" name="target_alt">target altitude, in m</field>
 	</message>
 	<message id="226" name="VISION_NUM_SCAN">
 		<description>Scan all numbers and get their positions in the beginning (Mavros->Pix->GCS)</description>
