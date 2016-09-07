@@ -197,17 +197,17 @@
 		<field type="uint8_t" name="num_odd_even">0, 1 or 2 represent spray all number, odd number or even number</field>
 		<field type="uint8_t" name="task_status">task status NO. about Task State Machine, 0~16~30</field>
 		<field type="uint8_t" name="loop_value">loop number of current task, 0~5</field>
-		<field type="double" name="target_lat">current target latitude, in deg</field>
-        <field type="double" name="target_lon">current target longitude, in deg</field>
-        <field type="float" name="target_alt">current target altitude, in m</field>
+		<field type="float" name="target_x">target X position (NED)</field>
+        <field type="float" name="target_y">target Y position (NED)</field>
+        <field type="float" name="target_z">target Z position (NED)</field>
 	</message>
 	<message id="226" name="VISION_NUM_SCAN">
 		<description>Scan all numbers and get their positions in the beginning (Mavros->Pix->GCS)</description>
 		<field type="uint64_t" name="timestamp">timestamp</field>
 		<field type="uint8_t" name="board_num">current board number</field>
-		<field type="float" name="board_x">current board number X position (may longitude, in deg)</field>
-		<field type="float" name="board_y">current board number Y position (may latitude, in deg)</field>
-        <field type="float" name="board_z">current board number Z position (may altitude, in m)</field>
+		<field type="float" name="board_x">current board number X position (NED)</field>
+		<field type="float" name="board_y">current board number Y position (NED)</field>
+        <field type="float" name="board_z">current board number Z position (NED)</field>
 		<field type="uint8_t" name="board_valid">whether this number is gotten</field>
 	</message>
 	<message id="227" name="VISION_ONE_NUM_GET">
@@ -219,9 +219,9 @@
 	<message id="228" name="OBSTACLE_POSITION">
 		<description>Get the obstacle position (Mavros->Pix->GCS)</description>
 		<field type="uint64_t" name="timestamp">timestamp</field>
-		<field type="float" name="obstacle_x">obstacle X position (may longitude, in deg)</field>
-		<field type="float" name="obstacle_y">obstacle Y position (may latitude, in deg)</field>
-        <field type="float" name="obstacle_z">obstacle Z position (may altitude, in m)</field>
+		<field type="float" name="obstacle_x">obstacle X position (NED)</field>
+		<field type="float" name="obstacle_y">obstacle Y position (NED)</field>
+        <field type="float" name="obstacle_z">obstacle Z position (NED)</field>
 		<field type="uint8_t" name="obstacle_valid">whether the obstacle is valid</field>
 	</message>
 </messages>
