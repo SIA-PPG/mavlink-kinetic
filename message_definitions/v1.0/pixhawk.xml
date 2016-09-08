@@ -183,7 +183,7 @@
 	<message id="223" name="YAW_SP_CALCULATED">
 		<description>A yaw set point calculated by SBC from FIXED_TARGET_POSITION message (Mavros->Pix->GCS)</description>
 		<field type="uint64_t" name="timestamp">timestamp</field>
-		<field type="float" name="yaw_sp">the calculated yaw set point</field>
+		<field type="float" name="yaw_sp">the calculated yaw set point, in rad (-pi ... pi)</field>
 	</message>
 	<message id="224" name="TASK_STATUS_CHANGE">
 		<description>GCS would change the task status of RUAV by this message (GCS->Pix->Mavros)</description>
