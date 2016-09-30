@@ -223,30 +223,30 @@
 	</message>
 	<message id="157" name="TASK_STATUS_CHANGE_G2P">
 		<description>GCS would change the task status of RUAV by this message (GCS->Pix)</description>
-		<field type="uint8_t" name="num_odd_even">0, 1 or 2 represent spray all number, odd number or even number</field>
+		<field type="float" name="spray_duration">spray duration in task set by GCS</field>
 		<field type="uint8_t" name="task_status">task status NO. about Task State Machine, 0~16~30</field>
 		<field type="uint8_t" name="loop_value">loop number of current task, 0~5</field>
 	</message>
 	<message id="158" name="TASK_STATUS_CHANGE_P2M">
 		<description>GCS would change the task status of RUAV by this message (Pix->Mavros)</description>
-		<field type="uint8_t" name="num_odd_even">0, 1 or 2 represent spray all number, odd number or even number</field>
+		<field type="float" name="spray_duration">spray duration in task set by GCS</field>
 		<field type="uint8_t" name="task_status">task status NO. about Task State Machine, 0~16~30</field>
 		<field type="uint8_t" name="loop_value">loop number of current task, 0~5</field>
 	</message>
 	<message id="159" name="TASK_STATUS_MONITOR_M2P">
 		<description>Return current task statue and taget point (Mavros->Pix)</description>
 		<field type="uint64_t" name="timestamp">timestamp</field>
-		<field type="uint8_t" name="num_odd_even">0, 1 or 2 represent spray all number, odd number or even number</field>
+		<field type="float" name="spray_duration">spray duration in task set by GCS, a constant value</field>
 		<field type="uint8_t" name="task_status">task status NO. about Task State Machine, 0~16~30</field>
 		<field type="uint8_t" name="loop_value">loop number of current task, 0~5</field>
 		<field type="double" name="target_lat">target latitude, in deg</field>
         <field type="double" name="target_lon">target longitude, in deg</field>
         <field type="float" name="target_alt">target altitude, in m</field>
 	</message>
-	<message id="160" name="TASK_STATUS_MONITOR_P2G">
+	<message id="160" name="TASK_STATUS_MONITOR_P2G">id="233"id="233"
 		<description>Return current task statue and taget point (Pix->GCS)</description>
 		<field type="uint64_t" name="timestamp">timestamp</field>
-		<field type="uint8_t" name="num_odd_even">0, 1 or 2 represent spray all number, odd number or even number</field>
+		<field type="float" name="spray_duration">spray duration in task set by GCS, a constant value</field>
 		<field type="uint8_t" name="task_status">task status NO. about Task State Machine, 0~16~30</field>
 		<field type="uint8_t" name="loop_value">loop number of current task, 0~5</field>
 		<field type="double" name="target_lat">target latitude, in deg</field>
