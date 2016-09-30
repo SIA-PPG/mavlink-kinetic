@@ -243,7 +243,7 @@
         <field type="double" name="target_lon">target longitude, in deg</field>
         <field type="float" name="target_alt">target altitude, in m</field>
 	</message>
-	<message id="160" name="TASK_STATUS_MONITOR_P2G">id="233"id="233"
+	<message id="160" name="TASK_STATUS_MONITOR_P2G">
 		<description>Return current task statue and taget point (Pix->GCS)</description>
 		<field type="uint64_t" name="timestamp">timestamp</field>
 		<field type="float" name="spray_duration">spray duration in task set by GCS, a constant value</field>
