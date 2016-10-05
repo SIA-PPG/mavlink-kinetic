@@ -150,66 +150,66 @@
 	</message>
 	<!-- UAVGP 2016 -->
 	<message id="151" name="FIXED_TARGET_POSITION_G2P">
-		<description>Some fixed positions that would be goten before takeoff by GPS (GCS->Pix)</description>
-		<field type="double" name="home_lat">home point latitude, in deg</field>
-        <field type="double" name="home_lon">home point longitude, in deg</field>
-        <field type="float" name="home_alt">home point altitude, in m</field>
-		<field type="double" name="observe_lat">observe point latitude, in deg</field>
-        <field type="double" name="observe_lon">observe point longitude, in deg</field>
-        <field type="float" name="observe_alt">observe point altitude, in m</field>
-		<field type="double" name="spray_left_lat">spray point latitude (left), in deg</field>
-        <field type="double" name="spray_left_lon">spray point longitude (left), in deg</field>
-        <field type="float" name="spray_left_alt">spray point altitude (left), in m</field>
-		<field type="double" name="spray_right_lat">spray point latitude (right), in deg</field>
-        <field type="double" name="spray_right_lon">spray point longitude (right), in deg</field>
-        <field type="float" name="spray_right_alt">spray point altitude (right), in m</field>
+		<description>Some fixed positions that would be goten before takeoff by NED (GCS->Pix)</description>
+		<field type="float" name="home_x">home point X position (NED), in m</field>
+        <field type="float" name="home_y">home point Y position (NED), in m</field>
+        <field type="float" name="home_z">home point Z position (NED), in m</field>
+		<field type="float" name="observe_x">observe point X position (NED), in m</field>
+        <field type="float" name="observe_y">observe point Y position (NED), in m</field>
+        <field type="float" name="observe_z">observe point Z position (NED), in m</field>
+		<field type="float" name="spray_left_x">spray point X position (left) (NED), in m</field>
+        <field type="float" name="spray_left_y">spray point Y position (left) (NED), in m</field>
+        <field type="float" name="spray_left_z">spray point Z position (left) (NED), in m</field>
+		<field type="float" name="spray_right_x">spray point X position (right) (NED), in m</field>
+        <field type="float" name="spray_right_y">spray point Y position (right) (NED), in m</field>
+        <field type="float" name="spray_right_z">spray point Z position (right) (NED), in m</field>
 	</message>
 	<message id="152" name="FIXED_TARGET_POSITION_P2M">
-		<description>Some fixed positions that would be goten before takeoff by GPS (Pix->Mavros)</description>
-		<field type="double" name="home_lat">home point latitude, in deg</field>
-        <field type="double" name="home_lon">home point longitude, in deg</field>
-        <field type="float" name="home_alt">home point altitude, in m</field>
-		<field type="double" name="observe_lat">observe point latitude, in deg</field>
-        <field type="double" name="observe_lon">observe point longitude, in deg</field>
-        <field type="float" name="observe_alt">observe point altitude, in m</field>
-		<field type="double" name="spray_left_lat">spray point latitude (left), in deg</field>
-        <field type="double" name="spray_left_lon">spray point longitude (left), in deg</field>
-        <field type="float" name="spray_left_alt">spray point altitude (left), in m</field>
-		<field type="double" name="spray_right_lat">spray point latitude (right), in deg</field>
-        <field type="double" name="spray_right_lon">spray point longitude (right), in deg</field>
-        <field type="float" name="spray_right_alt">spray point altitude (right), in m</field>
+		<description>Some fixed positions that would be goten before takeoff by NED (Pix->Mavros)</description>
+		<field type="float" name="home_x">home point X position (NED), in m</field>
+        <field type="float" name="home_y">home point Y position (NED), in m</field>
+        <field type="float" name="home_z">home point Z position (NED), in m</field>
+		<field type="float" name="observe_x">observe point X position (NED), in m</field>
+        <field type="float" name="observe_y">observe point Y position (NED), in m</field>
+        <field type="float" name="observe_z">observe point Z position (NED), in m</field>
+		<field type="float" name="spray_left_x">spray point X position (left) (NED), in m</field>
+        <field type="float" name="spray_left_y">spray point Y position (left) (NED), in m</field>
+        <field type="float" name="spray_left_z">spray point Z position (left) (NED), in m</field>
+		<field type="float" name="spray_right_x">spray point X position (right) (NED), in m</field>
+        <field type="float" name="spray_right_y">spray point Y position (right) (NED), in m</field>
+        <field type="float" name="spray_right_z">spray point Z position (right) (NED), in m</field>
 	</message>
 	<message id="153" name="FIXED_TARGET_RETURN_M2P">
 		<description>Get FIXED_TARGET_POSITION message and return this message (Mavros->Pix)</description>
 		<field type="uint64_t" name="timestamp">timestamp</field>
-		<field type="double" name="home_lat">home point latitude, in deg</field>
-        <field type="double" name="home_lon">home point longitude, in deg</field>
-        <field type="float" name="home_alt">home point altitude, in m</field>
-		<field type="double" name="observe_lat">observe point latitude, in deg</field>
-        <field type="double" name="observe_lon">observe point longitude, in deg</field>
-        <field type="float" name="observe_alt">observe point altitude, in m</field>
-		<field type="double" name="spray_left_lat">spray point latitude (left), in deg</field>
-        <field type="double" name="spray_left_lon">spray point longitude (left), in deg</field>
-        <field type="float" name="spray_left_alt">spray point altitude (left), in m</field>
-		<field type="double" name="spray_right_lat">spray point latitude (right), in deg</field>
-        <field type="double" name="spray_right_lon">spray point longitude (right), in deg</field>
-        <field type="float" name="spray_right_alt">spray point altitude (right), in m</field>
+		<field type="float" name="home_x">home point X position (NED), in m</field>
+        <field type="float" name="home_y">home point Y position (NED), in m</field>
+        <field type="float" name="home_z">home point Z position (NED), in m</field>
+		<field type="float" name="observe_x">observe point X position (NED), in m</field>
+        <field type="float" name="observe_y">observe point Y position (NED), in m</field>
+        <field type="float" name="observe_z">observe point Z position (NED), in m</field>
+		<field type="float" name="spray_left_x">spray point X position (left) (NED), in m</field>
+        <field type="float" name="spray_left_y">spray point Y position (left) (NED), in m</field>
+        <field type="float" name="spray_left_z">spray point Z position (left) (NED), in m</field>
+		<field type="float" name="spray_right_x">spray point X position (right) (NED), in m</field>
+        <field type="float" name="spray_right_y">spray point Y position (right) (NED), in m</field>
+        <field type="float" name="spray_right_z">spray point Z position (right) (NED), in m</field>
 	</message>
 	<message id="154" name="FIXED_TARGET_RETURN_P2G">
 		<description>Get FIXED_TARGET_POSITION message and return this message (Pix->GCS)</description>
 		<field type="uint64_t" name="timestamp">timestamp</field>
-		<field type="double" name="home_lat">home point latitude, in deg</field>
-        <field type="double" name="home_lon">home point longitude, in deg</field>
-        <field type="float" name="home_alt">home point altitude, in m</field>
-		<field type="double" name="observe_lat">observe point latitude, in deg</field>
-        <field type="double" name="observe_lon">observe point longitude, in deg</field>
-        <field type="float" name="observe_alt">observe point altitude, in m</field>
-		<field type="double" name="spray_left_lat">spray point latitude (left), in deg</field>
-        <field type="double" name="spray_left_lon">spray point longitude (left), in deg</field>
-        <field type="float" name="spray_left_alt">spray point altitude (left), in m</field>
-		<field type="double" name="spray_right_lat">spray point latitude (right), in deg</field>
-        <field type="double" name="spray_right_lon">spray point longitude (right), in deg</field>
-        <field type="float" name="spray_right_alt">spray point altitude (right), in m</field>
+		<field type="float" name="home_x">home point X position (NED), in m</field>
+        <field type="float" name="home_y">home point Y position (NED), in m</field>
+        <field type="float" name="home_z">home point Z position (NED), in m</field>
+		<field type="float" name="observe_x">observe point X position (NED), in m</field>
+        <field type="float" name="observe_y">observe point Y position (NED), in m</field>
+        <field type="float" name="observe_z">observe point Z position (NED), in m</field>
+		<field type="float" name="spray_left_x">spray point X position (left) (NED), in m</field>
+        <field type="float" name="spray_left_y">spray point Y position (left) (NED), in m</field>
+        <field type="float" name="spray_left_z">spray point Z position (left) (NED), in m</field>
+		<field type="float" name="spray_right_x">spray point X position (right) (NED), in m</field>
+        <field type="float" name="spray_right_y">spray point Y position (right) (NED), in m</field>
+        <field type="float" name="spray_right_z">spray point Z position (right) (NED), in m</field>
 	</message>
 	<message id="155" name="YAW_SP_CALCULATED_M2P">
 		<description>A yaw set point calculated by SBC from FIXED_TARGET_POSITION message (Mavros->Pix)</description>
@@ -224,51 +224,51 @@
 	<message id="157" name="TASK_STATUS_CHANGE_G2P">
 		<description>GCS would change the task status of RUAV by this message (GCS->Pix)</description>
 		<field type="float" name="spray_duration">spray duration in task set by GCS</field>
-		<field type="uint8_t" name="task_status">task status NO. about Task State Machine, 0~16~30</field>
+		<field type="uint8_t" name="task_status">task status NO. about Task State Machine, 0~16</field>
 		<field type="uint8_t" name="loop_value">loop number of current task, 0~5</field>
 	</message>
 	<message id="158" name="TASK_STATUS_CHANGE_P2M">
 		<description>GCS would change the task status of RUAV by this message (Pix->Mavros)</description>
 		<field type="float" name="spray_duration">spray duration in task set by GCS</field>
-		<field type="uint8_t" name="task_status">task status NO. about Task State Machine, 0~16~30</field>
+		<field type="uint8_t" name="task_status">task status NO. about Task State Machine, 0~16</field>
 		<field type="uint8_t" name="loop_value">loop number of current task, 0~5</field>
 	</message>
 	<message id="159" name="TASK_STATUS_MONITOR_M2P">
 		<description>Return current task statue and taget point (Mavros->Pix)</description>
 		<field type="uint64_t" name="timestamp">timestamp</field>
 		<field type="float" name="spray_duration">spray duration in task set by GCS, a constant value</field>
-		<field type="uint8_t" name="task_status">task status NO. about Task State Machine, 0~16~30</field>
+		<field type="uint8_t" name="task_status">task status NO. about Task State Machine, 0~16</field>
 		<field type="uint8_t" name="loop_value">loop number of current task, 0~5</field>
-		<field type="double" name="target_lat">target latitude, in deg</field>
-        <field type="double" name="target_lon">target longitude, in deg</field>
-        <field type="float" name="target_alt">target altitude, in m</field>
+		<field type="float" name="target_x">target X position (NED), in m</field>
+        <field type="float" name="target_y">target Y position (NED), in m</field>
+        <field type="float" name="target_z">target Z position (NED), in m</field>
 	</message>
 	<message id="160" name="TASK_STATUS_MONITOR_P2G">
 		<description>Return current task statue and taget point (Pix->GCS)</description>
 		<field type="uint64_t" name="timestamp">timestamp</field>
 		<field type="float" name="spray_duration">spray duration in task set by GCS, a constant value</field>
-		<field type="uint8_t" name="task_status">task status NO. about Task State Machine, 0~16~30</field>
+		<field type="uint8_t" name="task_status">task status NO. about Task State Machine, 0~16</field>
 		<field type="uint8_t" name="loop_value">loop number of current task, 0~5</field>
-		<field type="double" name="target_lat">target latitude, in deg</field>
-        <field type="double" name="target_lon">target longitude, in deg</field>
-        <field type="float" name="target_alt">target altitude, in m</field>
+		<field type="float" name="target_x">target X position (NED), in m</field>
+        <field type="float" name="target_y">target Y position (NED), in m</field>
+        <field type="float" name="target_z">target Z position (NED), in m</field>
 	</message>
 	<message id="161" name="VISION_NUM_SCAN_M2P">
 		<description>Scan all numbers and get their positions in the beginning (Mavros->Pix)</description>
 		<field type="uint64_t" name="timestamp">timestamp</field>
 		<field type="uint8_t" name="board_num">current board number</field>
-		<field type="float" name="board_x">current board number X position (NED)</field>
-		<field type="float" name="board_y">current board number Y position (NED)</field>
-        <field type="float" name="board_z">current board number Z position (NED)</field>
+		<field type="float" name="board_x">current board number X position (NED), in m</field>
+		<field type="float" name="board_y">current board number Y position (NED), in m</field>
+        <field type="float" name="board_z">current board number Z position (NED), in m</field>
 		<field type="uint8_t" name="board_valid">whether this number is gotten</field>
 	</message>
 	<message id="162" name="VISION_NUM_SCAN_P2G">
 		<description>Scan all numbers and get their positions in the beginning (Pix->GCS)</description>
 		<field type="uint64_t" name="timestamp">timestamp</field>
 		<field type="uint8_t" name="board_num">current board number</field>
-		<field type="float" name="board_x">current board number X position (NED)</field>
-		<field type="float" name="board_y">current board number Y position (NED)</field>
-        <field type="float" name="board_z">current board number Z position (NED)</field>
+		<field type="float" name="board_x">current board number X position (NED), in m</field>
+		<field type="float" name="board_y">current board number Y position (NED), in m</field>
+        <field type="float" name="board_z">current board number Z position (NED), in m</field>
 		<field type="uint8_t" name="board_valid">whether this number is gotten</field>
 	</message>
 	<message id="163" name="VISION_ONE_NUM_GET_M2P">
@@ -286,17 +286,17 @@
 	<message id="165" name="OBSTACLE_POSITION_M2P">
 		<description>Get the obstacle position (Mavros->Pix)</description>
 		<field type="uint64_t" name="timestamp">timestamp</field>
-		<field type="float" name="obstacle_x">obstacle X position (NED)</field>
-		<field type="float" name="obstacle_y">obstacle Y position (NED)</field>
-        <field type="float" name="obstacle_z">obstacle Z position (NED)</field>
+		<field type="float" name="obstacle_x">obstacle X position (NED), in m</field>
+		<field type="float" name="obstacle_y">obstacle Y position (NED), in m</field>
+        <field type="float" name="obstacle_z">obstacle Z position (NED), in m</field>
 		<field type="uint8_t" name="obstacle_valid">whether the obstacle is valid</field>
 	</message>
 	<message id="166" name="OBSTACLE_POSITION_P2G">
 		<description>Get the obstacle position (Pix->GCS)</description>
 		<field type="uint64_t" name="timestamp">timestamp</field>
-		<field type="float" name="obstacle_x">obstacle X position (NED)</field>
-		<field type="float" name="obstacle_y">obstacle Y position (NED)</field>
-        <field type="float" name="obstacle_z">obstacle Z position (NED)</field>
+		<field type="float" name="obstacle_x">obstacle X position (NED), in m</field>
+		<field type="float" name="obstacle_y">obstacle Y position (NED), in m</field>
+        <field type="float" name="obstacle_z">obstacle Z position (NED), in m</field>
 		<field type="uint8_t" name="obstacle_valid">whether the obstacle is valid</field>
 	</message>
 </messages>
