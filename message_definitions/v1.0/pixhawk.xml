@@ -224,20 +224,20 @@
 	<message id="157" name="TASK_STATUS_CHANGE_G2P">
 		<description>GCS would change the task status of RUAV by this message (GCS->Pix)</description>
 		<field type="float" name="spray_duration">spray duration in task set by GCS</field>
-		<field type="uint8_t" name="task_status">task status NO. about Task State Machine, 0~16</field>
+		<field type="uint8_t" name="task_status">task status NO. about Task State Machine, 0~17</field>
 		<field type="uint8_t" name="loop_value">loop number of current task, 0~5</field>
 	</message>
 	<message id="158" name="TASK_STATUS_CHANGE_P2M">
 		<description>GCS would change the task status of RUAV by this message (Pix->Mavros)</description>
 		<field type="float" name="spray_duration">spray duration in task set by GCS</field>
-		<field type="uint8_t" name="task_status">task status NO. about Task State Machine, 0~16</field>
+		<field type="uint8_t" name="task_status">task status NO. about Task State Machine, 0~17</field>
 		<field type="uint8_t" name="loop_value">loop number of current task, 0~5</field>
 	</message>
 	<message id="159" name="TASK_STATUS_MONITOR_M2P">
 		<description>Return current task statue and taget point (Mavros->Pix)</description>
 		<field type="uint64_t" name="timestamp">timestamp</field>
 		<field type="float" name="spray_duration">spray duration in task set by GCS, a constant value</field>
-		<field type="uint8_t" name="task_status">task status NO. about Task State Machine, 0~16</field>
+		<field type="uint8_t" name="task_status">task status NO. about Task State Machine, 0~17</field>
 		<field type="uint8_t" name="loop_value">loop number of current task, 0~5</field>
 		<field type="float" name="target_x">target X position (NED), in m</field>
         <field type="float" name="target_y">target Y position (NED), in m</field>
@@ -247,7 +247,7 @@
 		<description>Return current task statue and taget point (Pix->GCS)</description>
 		<field type="uint64_t" name="timestamp">timestamp</field>
 		<field type="float" name="spray_duration">spray duration in task set by GCS, a constant value</field>
-		<field type="uint8_t" name="task_status">task status NO. about Task State Machine, 0~16</field>
+		<field type="uint8_t" name="task_status">task status NO. about Task State Machine, 0~17</field>
 		<field type="uint8_t" name="loop_value">loop number of current task, 0~5</field>
 		<field type="float" name="target_x">target X position (NED), in m</field>
         <field type="float" name="target_y">target Y position (NED), in m</field>
